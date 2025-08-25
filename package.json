@@ -1,0 +1,21 @@
+{
+  "name": "clear-altv-server",
+  "version": "0.0.0",
+  "types": "module",
+  "main": "resource/server/index.js",
+  "scripts": {
+    "start": "pnpm exec altv-server.exe",
+    "update-altv": "altv-pkg release"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "license": "ISC",
+  "dependencies": {
+    "@altv/types-client": "16.2.2",
+    "@altv/types-natives": "16.2.0",
+    "@altv/types-server": "16.2.1",
+    "@altv/types-worker": "16.2.0"
+  },
+  "devDependencies": {
+    "altv-pkg": "^2.16.0"
+  }
+}

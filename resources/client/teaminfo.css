@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.text {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.score-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.red-text {
+  color: rgb(241, 146, 146);
+}
+
+.blue-text {
+  color: rgb(142, 142, 247);
+}

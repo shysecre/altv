@@ -1,0 +1,41 @@
+.test {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  font-size: 32px;
+  padding: 20px;
+  color: #fff; /* white fill */
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px; /* distance from bottom */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%); /* adjust for own width */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.index-body {
+  height: 100%;
+  width: 100%;
+}
+
+.full {
+  height: 100vh;
+  width: 100vw;
+}
+
+.button {
+  position: fixed;
+  bottom: 20px; /* distance from bottom */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%); /* adjust for own width */
+
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 251, 251);
+  font-size: 32px;
+}

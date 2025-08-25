@@ -1,0 +1,219 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@altv/types-client':
+        specifier: 16.2.2
+        version: 16.2.2(@altv/types-shared@16.6.0)(@altv/types-worker@16.2.0)
+      '@altv/types-natives':
+        specifier: 16.2.0
+        version: 16.2.0(@altv/types-client@16.2.2)
+      '@altv/types-server':
+        specifier: 16.2.1
+        version: 16.2.1(@altv/types-shared@16.6.0)
+      '@altv/types-worker':
+        specifier: 16.2.0
+        version: 16.2.0(@altv/types-client@16.2.2)
+    devDependencies:
+      altv-pkg:
+        specifier: ^2.16.0
+        version: 2.16.0
+
+packages:
+
+  '@altv/types-client@16.2.2':
+    resolution: {integrity: sha512-LH8j7zY8hg1+UoQyXeGsao+H58Wg55AVjM7xM+fUT4HXux5YCZbNIIWd/FvOL91/1gct5/WEnHXveCrmOUNhtw==}
+    peerDependencies:
+      '@altv/types-shared': ^16.2.0
+      '@altv/types-worker': ^16.2.0
+
+  '@altv/types-natives@16.2.0':
+    resolution: {integrity: sha512-kZ6Or14I9DLPPbSAEEDxS+Pt+Efv1lsJSCFeYemnmoQEJtVT/XbCjkwYUd9HHzbcxkyAB87DVn1toQrAjYCSxg==}
+    peerDependencies:
+      '@altv/types-client': ^16.2.0
+
+  '@altv/types-server@16.2.1':
+    resolution: {integrity: sha512-Cm1gcPPtaO/cUmdfwTw9p61bIe6tL9F0MVJDy1Y+2QPERtZDBoqiUfYLKwT7AOXMyF3scG6kX/fkpwZels9d8A==}
+    peerDependencies:
+      '@altv/types-shared': ^16.2.0
+
+  '@altv/types-shared@16.6.0':
+    resolution: {integrity: sha512-N9WP/OW9Mofs7EgRrsP/eGQPeClk0E0T+wjBZj6Aqkabu/47ONtYp23x829k4EqRwXr7eJ6BvQDoyK9cIuKZ/g==}
+
+  '@altv/types-worker@16.2.0':
+    resolution: {integrity: sha512-l2cy7xFn4QE+XCHJyu1dJB8cziwAfi4x4S8JbpymRAAnXkMHvrZixjpyeUzNRnQGn4dNhQz6QLyUYx+LEXDtyA==}
+    peerDependencies:
+      '@altv/types-client': ^16.2.0
+
+  altv-pkg@2.16.0:
+    resolution: {integrity: sha512-DUDjQ3ZeAqTpXIlE3Sv1TyO2WXUEJ4skJrijx0YWcCqOC37o1I56UxKbiZ53h8FTUOXWfkGADZh215shbC2ivQ==}
+    hasBin: true
+
+  ansi-styles@4.3.0:
+    resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
+    engines: {node: '>=8'}
+
+  bindings@1.5.0:
+    resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+
+  chalk@4.1.2:
+    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
+    engines: {node: '>=10'}
+
+  color-convert@2.0.1:
+    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
+    engines: {node: '>=7.0.0'}
+
+  color-name@1.1.4:
+    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  discord-rpc@4.0.1:
+    resolution: {integrity: sha512-HOvHpbq5STRZJjQIBzwoKnQ0jHplbEWFWlPDwXXKm/bILh4nzjcg7mNqll0UY7RsjFoaXA7e/oYb/4lvpda2zA==}
+
+  file-uri-to-path@1.0.0:
+    resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+
+  has-flag@4.0.0:
+    resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
+    engines: {node: '>=8'}
+
+  node-addon-api@1.7.2:
+    resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
+
+  node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+
+  register-scheme@https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17:
+    resolution: {tarball: https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17}
+    version: 0.0.2
+
+  supports-color@7.2.0:
+    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
+    engines: {node: '>=8'}
+
+  tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+
+  webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+
+  ws@7.5.10:
+    resolution: {integrity: sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+snapshots:
+
+  '@altv/types-client@16.2.2(@altv/types-shared@16.6.0)(@altv/types-worker@16.2.0)':
+    dependencies:
+      '@altv/types-shared': 16.6.0
+      '@altv/types-worker': 16.2.0(@altv/types-client@16.2.2)
+
+  '@altv/types-natives@16.2.0(@altv/types-client@16.2.2)':
+    dependencies:
+      '@altv/types-client': 16.2.2(@altv/types-shared@16.6.0)(@altv/types-worker@16.2.0)
+
+  '@altv/types-server@16.2.1(@altv/types-shared@16.6.0)':
+    dependencies:
+      '@altv/types-shared': 16.6.0
+
+  '@altv/types-shared@16.6.0': {}
+
+  '@altv/types-worker@16.2.0(@altv/types-client@16.2.2)':
+    dependencies:
+      '@altv/types-client': 16.2.2(@altv/types-shared@16.6.0)(@altv/types-worker@16.2.0)
+
+  altv-pkg@2.16.0:
+    dependencies:
+      chalk: 4.1.2
+      discord-rpc: 4.0.1
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
+
+  ansi-styles@4.3.0:
+    dependencies:
+      color-convert: 2.0.1
+
+  bindings@1.5.0:
+    dependencies:
+      file-uri-to-path: 1.0.0
+    optional: true
+
+  chalk@4.1.2:
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+
+  color-convert@2.0.1:
+    dependencies:
+      color-name: 1.1.4
+
+  color-name@1.1.4: {}
+
+  discord-rpc@4.0.1:
+    dependencies:
+      node-fetch: 2.7.0
+      ws: 7.5.10
+    optionalDependencies:
+      register-scheme: https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
+
+  file-uri-to-path@1.0.0:
+    optional: true
+
+  has-flag@4.0.0: {}
+
+  node-addon-api@1.7.2:
+    optional: true
+
+  node-fetch@2.7.0:
+    dependencies:
+      whatwg-url: 5.0.0
+
+  register-scheme@https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17:
+    dependencies:
+      bindings: 1.5.0
+      node-addon-api: 1.7.2
+    optional: true
+
+  supports-color@7.2.0:
+    dependencies:
+      has-flag: 4.0.0
+
+  tr46@0.0.3: {}
+
+  webidl-conversions@3.0.1: {}
+
+  whatwg-url@5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+
+  ws@7.5.10: {}

@@ -1,0 +1,18 @@
+# Altv stuff
+altv-crash-handler.exe
+altv-server.exe
+.server-crashes-cache
+cache
+libnode.dll
+server.log
+modules
+data
+
+# Packages etc.
+node_modules
+
+# Git
+.github
+.altv
+
+altv-dev-tools
