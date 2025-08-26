@@ -198,7 +198,10 @@ new alt.Utils.Keybind(116, () => {
   alt.emitServer("system:eval", "alt.emit('freecam:Toggle', player);");
 });
 
-alt.on("playMusic", (url) => {
+alt.onServer("playMusic", (url) => {
+  alt.Audio.all.map((a) => a.destroy());
+  if (!url) return;
+
   const output = new alt.AudioOutputAttached(alt.Player.local);
   const audio = new alt.Audio(url);
 
