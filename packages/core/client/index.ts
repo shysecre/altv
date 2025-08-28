@@ -1,6 +1,7 @@
 import alt, { WebView } from "alt-client";
 
-const WEBVIEW = new WebView("http://resource/webview/index.html");
+const WEBVIEW = new WebView("http://localhost:5173/");
+
 WEBVIEW.isVisible = true;
 WEBVIEW.focus();
 

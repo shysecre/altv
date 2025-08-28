@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "types": "module",
   "scripts": {
-    "start": "pnpm exec altv-server.exe",
+    "start": "run-p run:webview run:altv-server",
     "update-altv": "altv-pkg release",
     "copy-tomls": "node ./scripts/copy-tomls.js",
+    "run:webview": "pnpm --filter @res/webview run dev",
+    "run:altv-server": "pnpm exec altv-server.exe",
     "build": "turbo build --filter @res/* && pnpm copy-tomls",
     "build:force": "turbo build --force --filter @res/* && pnpm copy-tomls"
   },
@@ -17,5 +19,8 @@
     "cross-env": "^10.0.0",
     "tsup": "^8.5.0",
     "turbo": "^2.5.6"
+  },
+  "dependencies": {
+    "npm-run-all2": "^8.0.4"
   }
 }

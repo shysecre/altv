@@ -5,4 +5,4 @@ language = 'en'
 modules = ['js-module']
 debug = true
 sendPlayerNames = true
-resources = ["core"]
+resources = ["altv-dev-tools", "core"]
