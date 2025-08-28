@@ -5,7 +5,7 @@ altv-server.exe
 cache
 libnode.dll
 server.log
-modules
+modules/js-module
 data
 
 # Packages etc.
@@ -13,6 +13,10 @@ node_modules
 
 # Git
 .github
-.altv
 
-altv-dev-tools
+# Cache
+.turbo
+
+# Builded resources
+resources
+build

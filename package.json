@@ -1,21 +1,21 @@
 {
-  "name": "clear-altv-server",
+  "name": "altv-server",
   "version": "0.0.0",
   "types": "module",
-  "main": "resource/server/index.js",
   "scripts": {
     "start": "pnpm exec altv-server.exe",
-    "update-altv": "altv-pkg release"
+    "update-altv": "altv-pkg release",
+    "copy-tomls": "node ./scripts/copy-tomls.js",
+    "build": "turbo build --filter @res/* && pnpm copy-tomls",
+    "build:force": "turbo build --force --filter @res/* && pnpm copy-tomls"
   },
   "packageManager": "pnpm@10.13.1",
   "license": "ISC",
-  "dependencies": {
-    "@altv/types-client": "16.2.2",
-    "@altv/types-natives": "16.2.0",
-    "@altv/types-server": "16.2.1",
-    "@altv/types-worker": "16.2.0"
-  },
   "devDependencies": {
-    "altv-pkg": "^2.16.0"
+    "@types/node": "^24.3.0",
+    "altv-pkg": "^2.16.0",
+    "cross-env": "^10.0.0",
+    "tsup": "^8.5.0",
+    "turbo": "^2.5.6"
   }
 }

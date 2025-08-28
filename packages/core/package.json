@@ -1,0 +1,22 @@
+{
+  "name": "@res/core",
+  "scripts": {
+    "build": "cross-env NODE_ENV=prod tsup --config ./tsup-config.js",
+    "dev": "cross-env NODE_ENV=dev tsup --config ./tsup-config.js"
+  },
+  "type": "module",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "altv-data": "workspace:^"
+  },
+  "devDependencies": {
+    "@altv/types-client": "^16.6.0",
+    "@altv/types-server": "16.2.1",
+    "@altv/types-shared": "^16.6.0",
+    "@altv/types-webview": "^16.6.0",
+    "@shared/config": "workspace:^",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
