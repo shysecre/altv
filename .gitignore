@@ -20,3 +20,9 @@ node_modules
 # Builded resources
 resources
 build
+generated
+
+# Volumes
+postgres_data
+
+.env

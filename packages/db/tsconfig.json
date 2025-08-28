@@ -4,7 +4,6 @@
     "target": "es6",
     "moduleResolution": "bundler",
     "strict": true,
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
@@ -17,6 +16,8 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "rootDir": "src",
+    "outDir": "build"
   }
 }
