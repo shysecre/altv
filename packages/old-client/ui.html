@@ -1,0 +1,29 @@
+<html class="full">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="ui.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <div class="container">
+    <button id="mouseOnlyBtn" class="button" onclick="spawnVehicle()">
+      spawn vehicle
+    </button>
+  </div>
+  <script>
+    function spawnVehicle() {
+      if (!window.alt) return;
+
+      window.alt.emit("spawn-vehicle");
+    }
+
+    const btn = document.getElementById("mouseOnlyBtn");
+
+    btn.addEventListener("keydown", (e) => {
+      e.preventDefault();
+    });
+
+    btn.addEventListener("keypress", (e) => {
+      e.preventDefault();
+    });
+  </script>
+</html>

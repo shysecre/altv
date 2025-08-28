@@ -10,7 +10,6 @@ for (const dir of dirs) {
   const files = readdirSync(src);
 
   if (!files.includes("resource.toml")) continue;
-  if (["old-client", "old-server"].includes(dir)) continue;
 
   const toml = "resource.toml";
   const dest = resolve(root, "resources", dir);

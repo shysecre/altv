@@ -1,0 +1,37 @@
+<html class="full">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="teaminfo.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <span id="selected-team" class="text"></span>
+      <div class="score-container">
+        <span id="red-team-score" class="text red-text"></span>
+        <span id="blue-team-score" class="text blue-text"></span>
+      </div>
+    </div>
+  </body>
+  <script>
+    if (window.alt) {
+      window.alt.on("team-info", (data) => {
+        const selectedTeam = document.getElementById("selected-team");
+        const redTeamScore = document.getElementById("red-team-score");
+        const blueTeamScore = document.getElementById("blue-team-score");
+
+        const redPlayersText = data.redPlayers.length
+          ? data.redPlayers.join(", ")
+          : "None";
+
+        const bluePlayersText = data.bluePlayers.length
+          ? data.bluePlayers.join(", ")
+          : "None";
+
+        selectedTeam.innerText = `selected team: ${data.team}\npress / to change`;
+        redTeamScore.innerText = `${data.redScore}\n${redPlayersText}`;
+        blueTeamScore.innerText = `${data.blueScore}\n${bluePlayersText}`;
+      });
+    }
+  </script>
+</html>
