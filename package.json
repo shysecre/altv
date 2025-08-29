@@ -10,22 +10,27 @@
     "run:webview": "pnpm --filter @res/webview run dev",
     "run:altv-server": "pnpm exec altv-server.exe",
     "build": "turbo build --filter @res/* && pnpm copy",
-    "build:force": "turbo build --force --filter @res/* && pnpm copy"
+    "build:force": "turbo build --force --filter @res/* && pnpm copy",
+    "migrate:dev": "npx prisma migrate dev",
+    "migrate:deploy": "npx prisma migrate deploy",
+    "prisma:generate": "npx prisma generate"
   },
   "packageManager": "pnpm@10.13.1",
   "license": "ISC",
   "devDependencies": {
     "@swc/core": "^1.13.5",
     "@types/node": "^24.3.0",
+    "@types/pg": "^8.15.5",
     "altv-pkg": "^2.16.0",
     "cross-env": "^10.0.0",
+    "prisma": "^6.15.0",
     "tsup": "^8.5.0",
     "turbo": "^2.5.6"
   },
   "dependencies": {
+    "kysely": "^0.28.5",
     "npm-run-all2": "^8.0.4",
     "pg": "^8.16.3",
-    "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.26"
+    "prisma-kysely": "^1.8.0"
   }
 }

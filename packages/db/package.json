@@ -5,12 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_ENV=prod tsup --config ./tsup-config.js",
-    "dev": "cross-env NODE_ENV=dev tsup --config ./tsup-config.js",
-    "typeorm": "typeorm-ts-node-esm",
-    "m:g": "pnpm typeorm migration:generate",
-    "m:r": "pnpm typeorm migration:run",
-    "m:c": "pnpm typeorm migration:create",
-    "m:rev": "pnpm typeorm migration:revert"
+    "dev": "cross-env NODE_ENV=dev tsup --config ./tsup-config.js"
   },
   "exports": {
     ".": {

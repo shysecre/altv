@@ -1,17 +1,15 @@
-import { DataSource } from "typeorm";
-import * as entities from "./entities/index.js";
+import { Kysely, PostgresDialect } from "kysely";
+import { Pool } from "pg";
+import { DB } from "./types";
 
-export const DB = new DataSource({
-  type: "postgres",
-  host: "localhost",
-  port: 5432,
-  username: "root",
-  password: "root",
-  database: "altv",
-  synchronize: false,
-  logging: true,
-  migrations: ["./src/migrations/*.ts"],
-  entities
+const PostgreSQLDialect = new PostgresDialect({
+  pool: new Pool({
+    database: "altv",
+    host: "localhost",
+    user: "root",
+    password: "root",
+    port: 5432
+  })
 });
 
-export * from "./entities/index.js";
+export const db = new Kysely<DB>({ dialect: PostgreSQLDialect });

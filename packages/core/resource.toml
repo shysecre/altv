@@ -2,4 +2,4 @@ type = "js"
 main = "server/index.js"
 client-main = "client/index.js"
 client-files = ["client/*"]
-deps = ["altv-data", "db"]
+deps = ["db", "altv-data"]

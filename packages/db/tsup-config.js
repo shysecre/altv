@@ -8,13 +8,8 @@ const resourceName = __dirname.split("\\").pop();
 
 const external =
   "dependencies" in packageJson
-    ? [
-        ...Object.keys(packageJson.dependencies),
-        "typeorm",
-        "pg",
-        "reflect-metadata"
-      ]
-    : ["typeorm", "pg", "reflect-metadata"];
+    ? [...Object.keys(packageJson.dependencies), "kysely", "pg"]
+    : ["kysely", "pg"];
 const noExternal =
   "devDependencies" in packageJson
     ? Object.keys(packageJson.devDependencies)
@@ -37,14 +32,14 @@ export default defineConfig([
   },
   {
     entry: ["./src/index.ts"],
-    format: "esm",
+    format: ["esm"],
     tsconfig: "./tsconfig.json",
     outDir: `../../resources/${resourceName}`,
     clean: true,
     sourcemap: false,
     splitting: false,
     dts: false,
-    minify: true,
+    minify: false,
     external,
     noExternal,
     watch
