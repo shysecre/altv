@@ -12,5 +12,30 @@ generator kysely {
 model User {
   id Int @id @default(autoincrement())
 
-  name String
+  username String
+  password String
+
+  characters Character[]
+
+  @@map("users")
 }
+
+model Character {
+  id Int @id @default(autoincrement())
+
+  name String
+  lastname String
+
+  sex CharecterSex
+
+  userId Int @map("user_id")
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("characters")
+}
+
+enum CharecterSex {
+  FEMALE
+  MALE
+}
+
