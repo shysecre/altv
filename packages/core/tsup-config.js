@@ -13,7 +13,12 @@ export default defineConfig([
     outDir: `../../resources/${resourceName}/server/`,
     bundle: true,
     format: "esm",
-    external: [...Object.keys(packageJson.dependencies), "alt-server", "db"],
+    external: [
+      ...Object.keys(packageJson.dependencies),
+      "alt-server",
+      "kysely",
+      "pg"
+    ],
     noExternal: Object.keys(packageJson.devDependencies),
     clean: true,
     splitting: false,
@@ -26,7 +31,7 @@ export default defineConfig([
     outDir: `../../resources/${resourceName}/client/`,
     bundle: true,
     format: "esm",
-    external: [...Object.keys(packageJson.dependencies), "alt-client", "db"],
+    external: [...Object.keys(packageJson.dependencies), "alt-client"],
     noExternal: Object.keys(packageJson.devDependencies),
     clean: true,
     splitting: false,

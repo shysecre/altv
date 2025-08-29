@@ -5,7 +5,7 @@ datasource db {
 
 generator kysely {
   provider = "prisma-kysely"
-  output = "../packages/db/src/types"
+  output = "../packages/core/server/db/types"
   fileName = "index.ts"
 }
 
