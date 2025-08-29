@@ -1,7 +1,7 @@
 {
   "extends": ["@shared/config/tsconfig.json"],
   "compilerOptions": {
-    "rootDirs": ["./server/", "./client/"],
     "typeRoots": ["./node_modules/@types", "./node_modules/@altv"]
-  }
+  },
+  "include": ["./server/", "./client/", "./global.d.ts"]
 }

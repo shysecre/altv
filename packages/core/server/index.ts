@@ -1,5 +1,6 @@
 import alt from "alt-server";
-import spawnModule from "./modules/spawn";
+import { onAuthStart } from "./modules/auth";
+
 /**
  * TODO:
  * 1. Add ability to select gender
@@ -7,6 +8,6 @@ import spawnModule from "./modules/spawn";
  * 3. Spawn player only after all steps
  * 4. Optional: Save selected gender (model) & clothe set to local storage or db in future
  */
-alt.on("playerConnect", async (player) => {
-  spawnModule(player);
+alt.on("playerConnect", (player) => {
+  onAuthStart(player);
 });

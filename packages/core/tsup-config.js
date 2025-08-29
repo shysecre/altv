@@ -31,7 +31,11 @@ export default defineConfig([
     outDir: `../../resources/${resourceName}/client/`,
     bundle: true,
     format: "esm",
-    external: [...Object.keys(packageJson.dependencies), "alt-client"],
+    external: [
+      ...Object.keys(packageJson.dependencies),
+      "alt-client",
+      "dotenv"
+    ],
     noExternal: Object.keys(packageJson.devDependencies),
     clean: true,
     splitting: false,

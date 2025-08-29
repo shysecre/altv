@@ -8,10 +8,10 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
-    "altv-data": "workspace:^",
-    "db": "workspace:^"
+    "altv-data": "workspace:^"
   },
   "devDependencies": {
+    "shared": "workspace:^",
     "@altv/types-client": "^16.6.0",
     "@altv/types-server": "16.2.1",
     "@altv/types-shared": "^16.6.0",
