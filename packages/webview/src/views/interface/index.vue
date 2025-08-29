@@ -1,7 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>HELLO WORLD!</div>
+  <div class="ui">HELLO WORLD!</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.ui {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
